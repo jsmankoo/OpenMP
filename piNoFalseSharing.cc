@@ -29,14 +29,15 @@ int main(int argc, char** argv){
         //confirm that you got the numThreads that you requested
         if(ID == 0) numThreads = nThreads;
 
+        double sum = 0.0;
+
         for(int i=ID; i < totalSteps; i += nThreads){
             double x = (i + 0.5)*step;
-            double f = 4.0/(1.0 + x*x);
-
-            //make the pi update happen atomically
-            #pragma omp atomic
-                pi += f;
+            sum += 4.0/(1.0 + x*x);
         }
+
+        #pragma omp atomic
+            pi += sum;
     }
 
     pi *= step;
