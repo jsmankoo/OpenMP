@@ -7,5 +7,5 @@ hello World program for OpenMP
 #### pi.cc
 Calculates pi
 
-#### piNoFalseSharing.cc
+#### piSyncronization.cc
 Calculates pi but uses syncronization
