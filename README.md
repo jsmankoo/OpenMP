@@ -6,3 +6,6 @@ hello World program for OpenMP
 
 # pi.cc
 Calculates pi
+
+# piNoFalseSharing.cc
+Calculates pi but uses syncronization
