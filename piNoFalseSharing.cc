@@ -2,9 +2,6 @@
 #include <omp.h>
 #include <cstdlib> // atoi()
 
-
-
-//Code doesnt scale well with the number of threads cause of FALSE SHARING
 int main(int argc, char** argv){
     if(argc != 3){
         printf("Usage: %s noOfThreads totalSteps\n", argv[0]);
