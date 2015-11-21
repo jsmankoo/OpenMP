@@ -15,3 +15,8 @@ Calculates pi in parallel using syncronization
 
 #### piReduction.cc
 Calculates pi in parallel using Reduction
+
+#### mandelOrignal.cc and mandelSolution.cc
+Fix the code from original, problems include race conditions and wrongly scoped variables. 
+Program to compute the area of a  Mandelbrot set.
+
