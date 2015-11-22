@@ -22,3 +22,6 @@ Program to compute the area of a  Mandelbrot set.
 
 #### linked.c
 Transversing a linked list in parallel. Very Ugly solution. Need to convert linked list into array.
+
+#### linkedTasks.c
+Transvering a linked list in parallel. Much better compared to the one before. Uses Tasks.
